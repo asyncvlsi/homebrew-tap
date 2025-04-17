@@ -6,10 +6,9 @@ class Actflow < Formula
 
   option "with-newest-act", "Install the newest version of the act language"
 
-  # Some of these can probably be trimmed down or converted to build dependencies
   depends_on "cmake" => :build
+  depends_on "fmt" => :build
   depends_on "boost"
-  depends_on "fmt"
   depends_on "libedit"
   depends_on "libomp"
   depends_on "llvm"
