@@ -16,6 +16,8 @@ class Actflow < Formula
   uses_from_macos "m4" => :build
   uses_from_macos "zlib"
 
+  conflicts_with "asyncvlsi/tap/act-lang", because: "both install act"
+
   def install
     ENV.deparallelize
 
